@@ -24,14 +24,12 @@
 
 			
 
-			$email_from = "vampredfire44@gmail.com";
+			$email_from = "Contact Form";
+			$to = 'vampredfire44@gmail.com'; 
 			$email_subject = "New Form Submission";
-			$email_body = "You have received a new message from the user $name.\n Here is the message:\n $message"; 
+			$email_body = "From: $name\n Email: $email\n Message:\n $message "; 
 
-			$to = "vampredfire44@gmail.com"; 
-			$headers = "From: $email_from \r\n"; 
-			$headers .= "Reply-To: $visitor_email \r\n"; 
-			mail($to, $email_subject, $email_body, $headers); 
+			mail($to, $email_subject, $email_body, $email_from); 
 
 			//done. redirect to thank-you page.
 			header('Location: index.html');
