@@ -28,7 +28,7 @@ var main = function() {
 	
 	/*toggle form*/ 
 	$('#mail').click(function(){ 
-		$('form').toggleClass('visible'); 
+		$('.email').toggleClass('visible'); 
 	});
 
 	var highlighted = false;
