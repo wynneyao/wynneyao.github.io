@@ -352,7 +352,9 @@ body{
 	 	margin-top: 700px;
 	  }
 
-	 #email-form{ 
+	 .email{ 
+	 	color: #737373;
+	 	margin-left: 600px; 
 	 	visibility: hidden;
 	 	margin-top: 10px;
 
