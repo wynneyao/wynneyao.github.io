@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<link rel="stylesheet" href="css/style.css"> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"> 
+		<meta name="description" content="Wynne Yao's Portfolio"> 
+		<meta name="keywords" content="portfolio, web design, resume"> 
+		<meta name="author" content="Wynne Yao"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<title>Wynne Yao | Welcome</title>
+		
+	</head>
+
+	<body class="stop-scrolling"> 
+		<header> 
+			<div class="container"> 
+				<div id="branding">
+					<h1>Wynne Yao</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class="current"><a href="index.html">Home</a></li>
+						<li><a href="#main">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="resources/resume.pdf">Resume</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="showcaseTop"> 
+			<div class="container"> 
+				<h1 class="fade-in one">PORT</h1>
+				<h2 class="fade-in two">FOLIO</h2>
+			</div>
+		</section>
+
+		<section id="welcome"> 
+			<div>
+				<p class="fade-in three">Welcome</p>
+			</div>
+		</section>
+
+		<!--arrow-->
+		
+		<a href="#main">
+				<p>
+				<div>
+				<i class="fade-in arrow down"></i>
+				</div>
+				</p>
+		</a>
+		
+
+		<!--about page--> 
+		<section id="main">
+			<div>
+			<article id="main-col"> 
+			<h1 id="about">About Me </h1>
+			<p>Hey there. I'm Wynne Yao, a computer science and sound design student at Carnegie Mellon University in Pittsburgh, Pennsylvania. I'm interested in finding innovative and sophisticated ways to use technology in creating positive change in the world. So far, my interests lay in web development. I also love fusing art and technology to create impactful projects. </p> 
+			<p>I like to spend my time creating playlists, playing piano, and failing to get people to laugh at my self-deprecating jokes.</p></article>
+			</div>
+		</section>
+
+	<!--projects--> 
+
+	<section id="projects"> 
+		<h1 id="projectsText">Projects</h1>
+		<div class="col-sm-6">
+			<a class="projectImg" href="http://ideate.xsead.cmu.edu/gallery/projects/the-memory-box" target="_blank">  
+				<img id="memoryBox" class="projectImg" src="img/memoryBox.png"> 
+			</a>
+			<h4 class="title">The Memory Box</h4>
+				<p class="description"> 
+					An empathetic audio-visual art installation.</p> <p class="description">Created with Java, Python, Processing, and Arduino
+				</p>
+		</div>
+
+
+		<div class="col-sm-6"> 
+			<a class="projectImg" href="https://www.youtube.com/watch?v=jrH1fd9RxJk&t=2s&ab_channel=AmiA" target="_blank">
+				<img id="lifeboat" class="projectImg" src="img/lifeboat.jpeg"> 
+			</a>
+			<h4 class="title">Lifeboat</h4>
+			<p class="description"> 
+				A website that connects victims and rescuers based on location. </p> <p class="description"> Created with HTML, CSS, Bootstrap, Javascript, and PHP.  </p>
+		</div>
+
+		<div class="col-sm-6"> 
+			<a class="projectImg" href="https://www.youtube.com/watch?v=8VmT6ZaOOxA&ab_channel=WynneYao" target="_blank">
+				<img id="cadenza" class="projectImg" src="img/cadenza.jpeg"> 
+			</a>
+			<h4 class="title">Cadenza</h4>
+			<p class="description"> 
+				An interactive game that teaches music theory using random music generation algorithms.</p> 
+			<p class="description">Created with Python</p>
+				
+		</div>
+
+		<div class="col-sm-6"> 
+			<a class="projectImg" href="https://www.amazon.com/Pearl-Wynne-Yao/dp/150056902X" target="_blank">
+				<img id="pearl" class="projectImg" src="img/thepearl.jpg">
+			</a>
+			<h4 class="title">The Pearl</h4>
+				<p class="description"> 
+					Winner of Honorable Mention for Novel Writing in the Scholastic Art and Writing Awards.
+				</p>
+		</div>
+	</div>
+
+
+
+	<!--mail icon and form --> 
+	<div id="contact" class="contact"> 
+			<img src="img/mail.png" id="mail"> 
+		</div>
+
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4" id="email-form"> 
+			<form class="form-inline" method="POST" action="email.php"> 
+				<div class="form-group"> 
+						<label for="name">Name:</label>
+						<input type="text" class="form-control input-large" id="name" name = "name">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control input-large" id="email" name = "email">
+				</div>
+			</form> 
+			<form> 
+				<div class="form-group">
+					<label for="subject">Subject:</label>
+					<input type="text" class="form-control" id="subject" name = "subject">  
+				</div>
+				
+				<div class="form-group"> 
+					<label for="message">Message:</label>
+					<textarea name = "message" class="form-control" rows="5" id="message"></textarea> 
+				</div>
+				
+				<!--add recaptcha here--> 
+				<div class="form-group"> 
+					<div class="text-center">
+						<input type="submit" value="Send Form"> 
+						<!--<button type="submit" class="btn btn-default">Submit</button>--> 
+					</div>
+				</div>
+
+			
+			</form>
+		</div>
+
+
+
+	<footer> 
+		<p>Website Content, Design, and Images &copy; Wynne Yao  2017</p>
+	</footer>
+
+
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
+	<script src ="app.js"></script>
+
+	</body>
+
+
+</html>

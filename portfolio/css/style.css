@@ -1,0 +1,463 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+
+	padding:0;
+	margin:0;
+
+	background-color: #ffffff; 
+}
+
+/*Global*/
+/*use . with classes and # for id*/
+	.container{
+		width:80%; 
+		margin:auto; /*this moves to middle */ 
+		overflow:hidden; 
+	}	
+
+	ul { 
+		margin:0;
+		padding:0;
+	}
+
+	.page-title {
+		font-size: 40px;
+	}
+
+	.button_1{ 
+		height:38px; 
+		background:#e8491d; 
+		border:0; 
+		padding-left:20px; 
+		padding-right:20px; 
+		color:#ffffff;
+	 }
+
+	 .dark { 
+	 	padding:15px; 
+	 	background:#35424a; 
+	 	color:#ffffff; /*color is the color of the text*/
+	 	margin-top:10px; 
+	 	margin-bottom:10px; 
+	  }
+
+	.fade-in{ 
+		opacity:0; 
+		-webkit-animation: fadeIn ease-in 1; /*repeats animation ease-in 1 time*/
+		-moz-animation: fadeIn ease-in 1; 
+		animation: fadeIn ease-in 1; 
+
+		-webkit-animation-fill-mode: forwards; /*ensures after animation finishes, we remain at last keyframe value (opacity:1)*/
+		-moz-animation-fill-mode: forwards; 
+		animation-fill-mode: forwards; 
+
+		-webkit-animation-duration: 1s; 
+		-moz-animation-duration: 1s; 
+		animation-duration: 1s; 
+
+		-webkit-animation-delay: 0.7s; 
+		-moz-animation-delay: 0.7s; 
+		animation-delay: 0.7s; 
+	}
+
+	.stop-scrolling { 
+		height: 100%; 
+		overflow: hidden;
+	 }
+
+	/*arrow*/
+	/*code for arrow i and bounce taken from codepen dodozhang*/ 
+	i {
+	    border: solid black;
+	    border-width: 0 3px 3px 0;
+	    display: inline-block;
+	    padding: 3px;
+
+	}
+
+	@keyframes bounce { 
+		0%, 20%, 60%, 100% { 
+			-webkit-transform: translateY(0); 
+			transform: translateY(0); 
+		 }
+		40% { 
+			-webkit-transform: translateY(20px); 
+			transform: translateY(20px); 
+		 }
+		 80% { 
+		 	-webkit-transform: translateY(10px); 
+		 	transform: translateY(10px);
+		  }
+	 }
+
+	.fade-in.down{
+		/*margin-top: 30px;*/
+		margin-left: 715px;
+	    transform: rotate(45deg);
+	    -webkit-transform: rotate(45deg) scale(2, 2);
+
+	    -webkit-animation-delay: 1.7s; 
+		-moz-animation-delay: 1.7s; 
+		animation-delay: 1.7s; 
+
+	}
+
+/*Header*/
+	header { 
+		background:#ffffff;
+		color:#000000;
+		padding-top:30px;
+		min-height:70px;
+		border-bottom:#e8491d 3px solid;
+	}
+
+	header a{ /*selects all the links*/
+		color:#000000;
+		text-decoration:none; /*gets rid of underline under the links*/
+		text-transform:uppercase; 
+		font-size:16px;
+	}
+
+	header li{ 
+		float:left;
+		display:inline; 
+		padding:0 20px 0 20px; /*top right bottom left - review how this is done*/ 
+	}
+
+	header #branding { 
+		float:left;
+	}
+
+	header #branding h1{ 
+		margin:0; 
+	}
+
+	header nav{ 
+		float:right;
+		margin-top:10px;
+	}
+
+	/*must change html elements in the actual web developer*/ 
+	header .current a{
+		color:#e8491d; 
+		font-weight:bold;
+	}
+
+	/*makes the options in nav bar change when hover*/ 
+	header a:hover{
+		cover:#cccccc;
+		font-weight:bold; 
+	}
+
+
+
+	/*Showcase*/ 
+	@-webkit-keyframes fadeIn {from {opacity: 0;} to {opacity:1;}}
+	@-moz-keyframes fadeIn {from {opacity: 0;} to {opacity:1;}}
+	@keyframes fadeIn {from {opacity: 0;} to {opacity:1;}}
+
+	#showcaseTop{ 
+		min-height: 400px; 
+		min-width: 1000px;
+		background:url('../img/Panorama.jpg') no-repeat 0px;
+		background-size: contain;
+		background-position: center;
+		color:#ffffff;
+	}
+
+	#showcaseTop .fade-in.one { 
+		margin-top: 70px;
+		margin-bottom:10px;
+		margin-left: 100px;
+		font-size: 100px; 
+		position:absolute;
+
+		-webkit-animation-delay: 0.7s; 
+		-moz-animation-delay: 0.7s; 
+		animation-delay: 0.7s; 
+	}
+
+	#showcaseTop .fade-in.two { 
+		margin-top: 220px;
+		margin-left: 700px;
+		margin-bottom:10px;
+		font-size: 100px; 
+		
+
+		-webkit-animation-delay: 1.2s; 
+		-moz-animation-delay: 1.2s; 
+		animation-delay: 1.2s;
+	 }
+
+	 /*Welcome */ 
+	 #welcome .fade-in.three { 
+	 	font-size: 20px;
+	 	text-align: center;
+	 	margin-top: 100px;
+
+	 	-webkit-animation-delay: 1.7s; 
+		-moz-animation-delay: 1.7s; 
+		animation-delay: 1.7s;
+	  }
+
+
+
+	 /*Boxes*/ 
+	#boxes{ 
+		margin-top:20px; 
+
+	}
+
+	#boxes .box{ 
+		float:left; 
+		text-align:center; 
+		width:30%; /*makes this responsive*/ 
+		padding:10px; 
+	}
+
+	#boxes .box img{ 
+		width:350px; 
+
+	}
+
+	/*main-col */ 
+	#main{ 
+		margin: auto; 
+		margin-top: 170px;
+		text-align:center; 
+		width:65%;
+		color:#737373;
+	}
+
+	#about {
+
+		font-size: 40px;
+
+	}
+
+	.projectImg{ 
+		height: 300px; 
+		width: 300px;
+		/*background-size: contain;*/
+		background-position: center center;
+		color:#ffffff;
+		margin: 0 auto;
+		padding:0;
+	 }
+
+	.title{ 
+		visibility: hidden;
+		text-align: center;
+		margin-top: 120px;
+		color: #737373;
+	}
+
+	.description { 
+		visibility: hidden;
+		margin-left: 5px;
+		text-align: center;
+		color: #737373;
+	 }
+
+	 .projectImg:hover ~.description{ 
+	 	visibility: visible; 
+	  }
+
+	 .projectImg:hover ~.title{ 
+	 	visibility: visible;
+	  }
+
+	  .projectImg:hover { 
+	  	opacity: 0.7;
+	   }
+
+	/*.projectImg:after, .projectImg:before {
+		position:absolute;
+		opacity:0;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+	}
+	.projectImg:after {
+		content:'\A';
+		width:100%; height:100%;
+		top:0; left:0;
+		background:rgba(0,0,0,0.6);
+	}
+	.projectImg:before {
+		content: attr(data-content);
+		width:100%;
+		color:#fff;
+		z-index:10;
+		bottom:0;
+		padding:4px 10px;
+		text-align:center;
+	}
+	.projectImg:hover:after, .projectImg:hover:before {
+		opacity:1;
+	}*/
+
+
+
+	/*projects*/ 
+	#projectsText { 
+		margin-top: 50px;
+		font-size: 40px;
+		color:#737373;
+		text-align: center; 
+	 }
+
+	
+
+	#memoryBox { 
+		margin-top: 20px;
+		float:right; 
+
+	 }
+
+
+	#lifeboat { 
+		margin-top:20px;
+		float:left;
+
+	 }
+
+	#cadenza { 
+		margin-top: 30px;
+		float:right;
+	 }
+
+	 #pearl { 
+	 	margin-top: 30px;
+	 	float:left;
+	  }
+
+
+	/*mail*/ 
+	#mail { 
+		display:block; 
+		margin-top: 50px;
+		margin-left: auto; 
+		margin-right: auto;
+		width:5%; 
+		height:5%; 
+	 }
+
+
+
+	 /*form*/ 
+
+	 .contact{ 
+	 	margin-top: 700px;
+	  }
+
+	 #email-form{ 
+	 	visibility: hidden;
+	 	margin-top: 10px;
+
+	 }
+
+	 .visible { 
+	 	visibility: visible; 
+	  }
+
+
+	footer{ 
+		padding:10px; 
+		margin-top:400px;
+		color:#737373; 
+		
+		text-align:center;
+	}
+
+	/*media queries*/ /*makes the website responsive to shape changes in browser*/ 
+	/*once you resize the page to at least 768px, it will show up */ 
+	@media(max-width: 768px) { 
+
+		header #branding, 
+		header nav, 
+		header nav li, 
+		#newsleter h1, 
+		#newsletter form, 
+		#boxes .box, 
+		article#main-col, 
+		aside#sidebar{ 
+			float:none; 
+			text-align:center;
+			width:100%;
+		}
+
+		header{ 
+			padding-bottom:20px; 
+
+		 }
+
+		nav { 
+			display:block;
+		 }
+
+		#showcase h1{ 
+			margin-top:40px; 
+
+		}
+
+		#newsletter button{ 
+			display:block; /*will stay in 1 line - won't run over*/
+			width:100%;
+		}
+
+		#newsletter form input[type="email"] { 
+			width:100%; 
+			margin-bottom:5px;
+		 }
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
