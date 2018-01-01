@@ -161,7 +161,7 @@ body{
 	#showcaseTop{ 
 		min-height: 400px; 
 		min-width: 1000px;
-		background:url('../img/Panorama.JPG') no-repeat 0px;
+		background:url('https://wynneyao.github.io/portfolio/img/Panorama.JPG') no-repeat 0px;
 		background-size: contain;
 		background-position: center;
 		color:#ffffff;
