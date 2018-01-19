@@ -57,9 +57,9 @@ body{
 		-moz-animation-duration: 1s; 
 		animation-duration: 1s; 
 
-		-webkit-animation-delay: 0.7s; 
-		-moz-animation-delay: 0.7s; 
-		animation-delay: 0.7s; 
+		-webkit-animation-delay: 1.0s; 
+		-moz-animation-delay: 1.0s; 
+		animation-delay: 1.0s; 
 	}
 
 	.stop-scrolling { 
@@ -174,9 +174,9 @@ body{
 		font-size: 100px; 
 		position:absolute;
 
-		-webkit-animation-delay: 0.7s; 
-		-moz-animation-delay: 0.7s; 
-		animation-delay: 0.7s; 
+		-webkit-animation-delay: 1.0s; 
+		-moz-animation-delay: 1.0s; 
+		animation-delay: 1.0s; 
 	}
 
 	#showcaseTop .fade-in.two { 
@@ -186,9 +186,9 @@ body{
 		font-size: 100px; 
 		
 
-		-webkit-animation-delay: 1.2s; 
-		-moz-animation-delay: 1.2s; 
-		animation-delay: 1.2s;
+		-webkit-animation-delay: 1.5s; 
+		-moz-animation-delay: 1.5s; 
+		animation-delay: 1.5s;
 	 }
 
 	 /*Welcome */ 
@@ -197,9 +197,9 @@ body{
 	 	text-align: center;
 	 	margin-top: 100px;
 
-	 	-webkit-animation-delay: 1.7s; 
-		-moz-animation-delay: 1.7s; 
-		animation-delay: 1.7s;
+	 	-webkit-animation-delay: 2.0s; 
+		-moz-animation-delay: 2.0s; 
+		animation-delay: 2.0s;
 	  }
 
 
