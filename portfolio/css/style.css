@@ -70,7 +70,6 @@ body{
 	/*arrow*/
 	/*code for arrow i and bounce taken from codepen dodozhang*/ 
 	i {
-	    margin-top: 30%;
 	    border: solid black;
 	    border-width: 0 3px 3px 0;
 	    display: inline-block;
